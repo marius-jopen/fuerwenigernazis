@@ -49,6 +49,11 @@
 						]
 					}
 				]
+			},
+			"headline": {
+				"__TYPE__": "FieldContent",
+				"value": "period",
+				"type": "Text"
 			}
 		},
 		"items": []

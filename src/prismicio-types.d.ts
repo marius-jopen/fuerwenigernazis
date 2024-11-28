@@ -111,6 +111,16 @@ export interface LogosSliceDefaultPrimaryItemsItem {
  */
 export interface LogosSliceDefaultPrimary {
 	/**
+	 * Headline field in *Logos → Default → Primary*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: logos.default.primary.headline
+	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 */
+	headline: prismic.KeyTextField;
+
+	/**
 	 * Items field in *Logos → Default → Primary*
 	 *
 	 * - **Field Type**: Group
