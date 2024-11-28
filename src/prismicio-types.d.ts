@@ -205,33 +205,18 @@ type LogosSliceVariation = LogosSliceDefault;
 export type LogosSlice = prismic.SharedSlice<'logos', LogosSliceVariation>;
 
 /**
- * Item in *Opener → Default → Primary → Items*
- */
-export interface OpenerSliceDefaultPrimaryItemsItem {
-	/**
-	 * Text field in *Opener → Default → Primary → Items*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: opener.default.primary.items[].text
-	 * - **Documentation**: https://prismic.io/docs/field#key-text
-	 */
-	text: prismic.KeyTextField;
-}
-
-/**
  * Primary content in *Opener → Default → Primary*
  */
 export interface OpenerSliceDefaultPrimary {
 	/**
-	 * Items field in *Opener → Default → Primary*
+	 * Text field in *Opener → Default → Primary*
 	 *
-	 * - **Field Type**: Group
+	 * - **Field Type**: Text
 	 * - **Placeholder**: *None*
-	 * - **API ID Path**: opener.default.primary.items[]
-	 * - **Documentation**: https://prismic.io/docs/field#group
+	 * - **API ID Path**: opener.default.primary.text
+	 * - **Documentation**: https://prismic.io/docs/field#key-text
 	 */
-	items: prismic.GroupField<Simplify<OpenerSliceDefaultPrimaryItemsItem>>;
+	text: prismic.KeyTextField;
 }
 
 /**
@@ -414,7 +399,6 @@ declare module '@prismicio/client' {
 			LogosSliceVariation,
 			LogosSliceDefault,
 			OpenerSlice,
-			OpenerSliceDefaultPrimaryItemsItem,
 			OpenerSliceDefaultPrimary,
 			OpenerSliceVariation,
 			OpenerSliceDefault,

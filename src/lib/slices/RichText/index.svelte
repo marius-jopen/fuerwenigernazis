@@ -1,25 +1,12 @@
 <script lang="ts">
 	import type { Content } from '@prismicio/client';
 	import { PrismicRichText } from '@prismicio/svelte';
-	import Label from './Label.svelte';
 
 	export let slice: Content.RichTextSlice;
 </script>
 
-<section class="container">
-	<PrismicRichText
-		field={slice.primary.content}
-		components={{
-			label: Label
-		}}
-	/>
+<section class="pt-20">
+	<div class="px-8 md:px-0 w-full md:w-8/12 lg:w-6/12 mx-auto text-xl md:text-2xl">
+		<PrismicRichText field={slice.primary.content} />
+	</div>
 </section>
-
-<style>
-	.container {
-		max-width: 600px;
-		margin: 6em auto;
-		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
-			'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-	}
-</style>

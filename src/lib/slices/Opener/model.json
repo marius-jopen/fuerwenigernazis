@@ -12,20 +12,11 @@
       "description": "Default",
       "imageUrl": "",
       "primary": {
-        "items": {
-          "type": "Group",
+        "text": {
+          "type": "Text",
           "config": {
-            "label": "Items",
-            "repeat": true,
-            "fields": {
-              "text": {
-                "type": "Text",
-                "config": {
-                  "label": "Text",
-                  "placeholder": ""
-                }
-              }
-            }
+            "label": "Text",
+            "placeholder": ""
           }
         }
       },
