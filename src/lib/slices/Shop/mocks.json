@@ -42,6 +42,14 @@
 									"value": "park",
 									"type": "Text"
 								}
+							],
+							[
+								"text",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "heading",
+									"type": "Text"
+								}
 							]
 						]
 					}

@@ -26,6 +26,13 @@
                   "thumbnails": []
                 }
               },
+              "text": {
+                "type": "Text",
+                "config": {
+                  "label": "Text",
+                  "placeholder": ""
+                }
+              },
               "shop_code": {
                 "type": "Text",
                 "config": {

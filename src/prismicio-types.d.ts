@@ -4,7 +4,53 @@ import type * as prismic from '@prismicio/client';
 
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
-type PageDocumentDataSlicesSlice = RichTextSlice;
+/**
+ * Item in *Footer → Items*
+ */
+export interface FooterDocumentDataItemsItem {
+	/**
+	 * Link field in *Footer → Items*
+	 *
+	 * - **Field Type**: Link
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: footer.items[].link
+	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 */
+	link: prismic.LinkField;
+}
+
+/**
+ * Content for Footer documents
+ */
+interface FooterDocumentData {
+	/**
+	 * Items field in *Footer*
+	 *
+	 * - **Field Type**: Group
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: footer.items[]
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/field#group
+	 */
+	items: prismic.GroupField<Simplify<FooterDocumentDataItemsItem>>;
+}
+
+/**
+ * Footer document from Prismic
+ *
+ * - **API ID**: `footer`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type FooterDocument<Lang extends string = string> = prismic.PrismicDocumentWithoutUID<
+	Simplify<FooterDocumentData>,
+	'footer',
+	Lang
+>;
+
+type PageDocumentDataSlicesSlice = LogosSlice | ShopSlice | OpenerSlice | RichTextSlice;
 
 /**
  * Content for Page documents
@@ -79,7 +125,7 @@ export type PageDocument<Lang extends string = string> = prismic.PrismicDocument
 	Lang
 >;
 
-export type AllDocumentTypes = PageDocument;
+export type AllDocumentTypes = FooterDocument | PageDocument;
 
 /**
  * Item in *Logos → Default → Primary → Items*
@@ -272,6 +318,16 @@ export interface ShopSliceDefaultPrimaryItemsItem {
 	image: prismic.ImageField<never>;
 
 	/**
+	 * Text field in *Shop → Default → Primary → Items*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: shop.default.primary.items[].text
+	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 */
+	text: prismic.KeyTextField;
+
+	/**
 	 * Shop Code field in *Shop → Default → Primary → Items*
 	 *
 	 * - **Field Type**: Text
@@ -345,6 +401,9 @@ declare module '@prismicio/client' {
 
 	namespace Content {
 		export type {
+			FooterDocument,
+			FooterDocumentData,
+			FooterDocumentDataItemsItem,
 			PageDocument,
 			PageDocumentData,
 			PageDocumentDataSlicesSlice,
