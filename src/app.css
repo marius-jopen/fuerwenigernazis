@@ -19,5 +19,9 @@
 }
 
 p {
-    @apply font-sans;
+    @apply font-sans pt-4 md:pt-6;
+}
+
+li {
+    @apply pt-6 md:pt-8
 }

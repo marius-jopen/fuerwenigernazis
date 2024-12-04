@@ -12,7 +12,7 @@
 	}, [] as string[]);
 </script>
 
-<section class="pt-40">
+<section class="pt-40 pb-8">
 	<div class="font-display text-[22vw] lg:text-[17vw] leading-[0.8] uppercase text-center">
 		<div>{line1}</div>
 		<div>{line2}</div>
