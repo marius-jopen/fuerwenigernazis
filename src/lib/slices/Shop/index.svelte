@@ -11,7 +11,7 @@
 			<div class="pt-8 lg:pt-0 relative">
 				<PrismicImage field={item.image} />
 
-				<div class="text-2xl text-center pt-2">
+				<div class="text-2xl text-center pt-4">
 					{item.text}
 				</div>
 
