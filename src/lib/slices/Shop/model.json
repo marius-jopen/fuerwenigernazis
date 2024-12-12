@@ -12,6 +12,13 @@
       "description": "Default",
       "imageUrl": "",
       "primary": {
+        "add_to_cart_text": {
+          "type": "Text",
+          "config": {
+            "label": "Add To Cart Text",
+            "placeholder": ""
+          }
+        },
         "items": {
           "type": "Group",
           "config": {
@@ -33,10 +40,19 @@
                   "placeholder": ""
                 }
               },
+              "more_info": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "More Info",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                }
+              },
               "shop_code": {
                 "type": "Text",
                 "config": {
-                  "label": "Shop Code",
+                  "label": "Product ID",
                   "placeholder": ""
                 }
               }

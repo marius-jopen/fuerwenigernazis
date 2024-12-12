@@ -2,7 +2,6 @@
 	import { SliceZone } from '@prismicio/svelte';
 	import { components } from '$lib/slices';
 	import Footer from '$lib/footer.svelte';
-
 	export let data;
 </script>
 

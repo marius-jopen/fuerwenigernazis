@@ -313,7 +313,17 @@ export interface ShopSliceDefaultPrimaryItemsItem {
 	text: prismic.KeyTextField;
 
 	/**
-	 * Shop Code field in *Shop → Default → Primary → Items*
+	 * More Info field in *Shop → Default → Primary → Items*
+	 *
+	 * - **Field Type**: Rich Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: shop.default.primary.items[].more_info
+	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 */
+	more_info: prismic.RichTextField;
+
+	/**
+	 * Product ID field in *Shop → Default → Primary → Items*
 	 *
 	 * - **Field Type**: Text
 	 * - **Placeholder**: *None*
@@ -327,6 +337,16 @@ export interface ShopSliceDefaultPrimaryItemsItem {
  * Primary content in *Shop → Default → Primary*
  */
 export interface ShopSliceDefaultPrimary {
+	/**
+	 * Add To Cart Text field in *Shop → Default → Primary*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: shop.default.primary.add_to_cart_text
+	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 */
+	add_to_cart_text: prismic.KeyTextField;
+
 	/**
 	 * Items field in *Shop → Default → Primary*
 	 *

@@ -39,7 +39,7 @@
 								"shop_code",
 								{
 									"__TYPE__": "FieldContent",
-									"value": "park",
+									"value": "balloon",
 									"type": "Text"
 								}
 							],
@@ -50,10 +50,29 @@
 									"value": "heading",
 									"type": "Text"
 								}
+							],
+							[
+								"more_info",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Officia cupidatat adipisicing ipsum id duis sit consequat qui minim exercitation sit."
+											}
+										}
+									]
+								}
 							]
 						]
 					}
 				]
+			},
+			"add_to_cart_text": {
+				"__TYPE__": "FieldContent",
+				"value": "gradually",
+				"type": "Text"
 			}
 		},
 		"items": []
