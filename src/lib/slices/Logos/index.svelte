@@ -5,7 +5,7 @@
 </script>
 
 <section class="pt-60">
-	<div class="text-2xl text-center pb-8">
+	<div class="text-center pb-8">
 		{slice.primary.headline}
 	</div>
 

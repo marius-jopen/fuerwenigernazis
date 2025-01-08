@@ -6,7 +6,9 @@ export default {
       sans: ['Pressura'],
       display: ['Gravity']
     },
-    extend: {}
+    extend: {
+
+    }
   },
   plugins: []
 };
