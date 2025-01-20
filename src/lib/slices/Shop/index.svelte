@@ -7,6 +7,8 @@
 
 <section class="pt-40">
 	<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 px-8 ">
+		<!-- <ShopifyButton productId="{slice.primary.items[1].shop_code}" buttonText="{slice.primary.add_to_cart_text}" /> -->
+		<!-- 10407460700491 -->
 		{#each slice.primary.items as item}
 			<div class="pt-8 lg:pt-0 relative">
 				<PrismicImage field={item.image} />

@@ -47,15 +47,19 @@
                   "padding-top": "17px",
                   "padding-bottom": "17px",
                   "border-radius": "0px",
-                  "background-color": "white",
-                  "color": "#000000",
-                  "border": "1px solid #d2d2d2",
+                  "background-color": "black",
+                  "color": "white",
+                  "border": "1px solid #000000",
+                  "transition": "none",
+                  "line-height": "130%",
                   ":hover": {
                     "background-color": "white",
+                    "color": "black",
                     "border": "1px solid #000000"
                   },
                   ":focus": {
                     "background-color": "white",
+                    "color": "black",
                     "border": "1px solid #000000"
                   }
                 },
@@ -141,12 +145,16 @@
                   "padding-top": "17px",
                   "padding-bottom": "17px",
                   "border-radius": "0px",
-                  "background-color": "#000000",
+                  "background-color": "black",
+                  "color": "white",
+                  "border": "1px solid #000000",
                   ":hover": {
-                    "background-color": "#000000"
+                    "background-color": "black",
+                    "border": "1px solid #000000"
                   },
                   ":focus": {
-                    "background-color": "#000000"
+                    "background-color": "black",
+                    "border": "1px solid #000000"
                   }
                 }
               },
